@@ -1,0 +1,68 @@
+<%-include("partials/header") %>
+    <%-include("partials/textBox") %>
+        <br>
+        <br>
+
+        <div class="data">
+            <div class="weather_icon">
+                <div class="icon">
+                    <img id="pic" src="" width="150" height="150" />
+                    <% var Icon=icon; %>
+                </div>
+                <div class="descrip">
+                    <p>
+                        <%=descrip %>&nbsp;sky
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="temperature">
+                <p>
+                    <%=temp %>°C
+                </p>
+                <span>
+
+                    <p>Min:&nbsp;<%=min_temp %>°C</p>
+
+
+                    <p>Max:&nbsp;<%=max_temp %>°C</p>
+
+                </span>
+
+            </div>
+            <div class="location">
+                <span><i class="zmdi zmdi-pin-drop"></i>
+
+                    <%=city %>,
+
+
+                        <%= country %>
+
+                </span>
+            </div>
+            <div class="time">
+
+                <%= Day%>,
+
+
+                    <%= month%>-
+
+
+                        <%= day%>
+
+
+            </div>
+
+
+        </div>
+
+        <script>
+            let Iconn = "<%= Icon%>";
+            let weather_icon = " http://openweathermap.org/img/wn/" + Iconn + "@2x.png";
+            console.log(weather_icon);
+            document.getElementById("pic").src = weather_icon;
+
+        </script>
+        <%-include("partials/footer") %>

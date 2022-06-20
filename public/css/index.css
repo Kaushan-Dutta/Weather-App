@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url("../images/weather.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  background-color: #2e2c2b;
+}
+.header .title {
+  font-family: "Satisfy", cursive;
+  color: whitesmoke;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header .title h1 {
+  margin: auto 5%;
+}
+
+.body {
+  margin: auto;
+}
+.body .container {
+  border: none;
+  box-shadow: 10px 5px 5px rgb(143, 135, 135);
+  max-width: 300px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+}
+.body .container .heading {
+  background-color: #588c7e;
+  font-family: cursive;
+}
+
+.data {
+  margin: auto;
+  text-align: center;
+  max-width: 350px;
+
+  background: linear-gradient(
+    to bottom,
+    rgb(73, 231, 231),
+    rgb(4, 175, 187),
+    rgb(6, 158, 185)
+  );
+  border: none;
+  box-shadow: 5px 5px 5px rgb(143, 135, 135);
+  padding: 12px 12px 12px 12px;
+}
+.weather_icon {
+  position: relative;
+  top: -30px;
+}
+.weather_icon .descrip {
+  color: #043253;
+  font-family: "Rockwell";
+  font-size: 25px;
+  position: relative;
+  top: -20px;
+}
+.temperature {
+  position: relative;
+  top: -50px;
+}
+.temperature p {
+  color: #9f0f17;
+  font-family: "Rockwell";
+  font-size: 30px;
+}
+.temperature span {
+  position: relative;
+  top: -15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: black;
+  font-size: 20px;
+}
+.temperature span p {
+  color: black;
+  font-size: 20px;
+}
+.location {
+  position: relative;
+  top: -60px;
+  color: #2f2c1c;
+  font-family: "Sansita", sans-serif;
+  font-size: 30px;
+}
+.time {
+  position: relative;
+  top: -50px;
+  color: #2f2c1c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.wrong_input {
+  background: linear-gradient(to bottom, rgb(31, 228, 195), rgb(6, 158, 133));
+  padding: 15px 10px 10px;
+  text-align: center;
+  border-radius: 20px;
+  max-width: 350px;
+  font-family: "Rockwell";
+  font-size: 26px;
+  margin: auto;
+}
+.container .enter_box form span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .enter_box form span input {
+  max-width: 70%;
+}
+.container .enter_box form span input:nth-child(2) {
+  padding: 0px 10px 0px 10px;
+}
+.box {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.page {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 10px 0px 10px 0px;
+
+}
+
+.page img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
