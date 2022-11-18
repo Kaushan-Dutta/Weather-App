@@ -42,7 +42,7 @@ app.post("/",function(req,res){
                         const day=date.getDate();
                         //declaring the array since the above return integer
                         const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-                        const month=months[date.getMonth()+1];
+                        const month=months[date.getMonth()];
 
                         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                         const Day=days[date.getDay()];
